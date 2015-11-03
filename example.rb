@@ -1,9 +1,9 @@
 require './factory'
 
 Album = Factory.new(:title, :band, :year) do
-	def introduce
-		"#{band} - \"#{title}\" (#{year})"
-	end
+  def introduce
+    "#{band} - \"#{title}\" (#{year})"
+  end
 end
 
 kill = Album.new("Kill", "Cannibal Corpse", 2006)
@@ -17,9 +17,9 @@ puts la_woman.introduce
 puts kill == la_woman 
 
 Factory.new("Person", :name, :age) do
-	def about
-		"My name is #{name} and I'm #{age}"
-	end
+  def about
+    "My name is #{name} and I'm #{age}"
+  end
 end
 
 vincent = Person.new("Vincent", 44)
